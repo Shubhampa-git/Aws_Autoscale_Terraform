@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1" # Replace with your AWS region
+}
+
 module "vpc" {
   source      = "./modules/vpc" # Relative path from main.tf
   cidr_block  = "10.0.0.0/16"
