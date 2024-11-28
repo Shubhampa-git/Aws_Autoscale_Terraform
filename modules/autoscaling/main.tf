@@ -1,6 +1,6 @@
 resource "aws_launch_template" "main" {
   name          = var.name
-  image_id      = var.ami
+  image_id      = var.ami    # Make sure to update this with a valid AMI ID
   instance_type = var.instance_type
 
   tag_specifications {
